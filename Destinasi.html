@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pariwisata Kabupaten Bulukumba</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Tautan ke Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Animasi latar belakang */
+       /* Animasi latar belakang */
+body {
+    animation: gradientBackground 5s ease infinite;
+    background: linear-gradient(45deg, #f1f2f4, #CDFAD5);
+    background-size: 400% 400%;
+    margin: 0;
+}
+
+@keyframes gradientBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Warna teks dan padding untuk konten */
+.content {
+    color: #FFF8C9;
+    padding: 20px;
+}
+
+.navbar {
+    background-color: #2e8bdc;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.navbar-brand {
+    color: #FFCF96;
+}
+
+.nav-link {
+    color: #FFCF96;
+    margin: 0 15px;
+}
+
+.carousel-caption {
+    background: rgba(250, 249, 249, 0.5);
+    color: #1f1f1e;
+}
+
+/* Ukuran maksimum gambar dalam Carousel */
+.carousel-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.body{
+    font-family: Arial, sans-serif; /* Ganti dengan font yang Anda inginkan */
+}
+
+.custom-font {
+    font-family: "Courier New", monospace; /* Font khusus untuk elemen dengan class "custom-font" */
+}
+
+.navbar {
+    border-bottom: 2px solid transparent; /* Garis bawah awalnya transparan */
+}
+
+.navbar a:link,
+.navbar a:visited {
+    text-decoration: none; /* Hilangkan dekorasi tautan */
+}
+
+.navbar a:active,
+.navbar a:hover {
+    border-bottom: 2px solid #FFCF96; /* Warna dan lebar garis bawah saat aktif dan hover */
+}
+
+.navbar a:active,
+.navbar a:hover,
+.navbar a:focus {
+    border-bottom: 2px solid #FFCF96; /* Warna dan lebar garis bawah saat aktif, hover, dan fokus */
+}
+
+/* CSS untuk garis bawah pada navbar setelah diklik */
+.nav-link.active {
+    border-bottom: 2px solid #FFCF96;
+}
+
+
+.carousel {
+    max-width: 800px; /* Lebar maksimum carousel */
+    margin: 0 auto; /* Pusatkan carousel secara horizontal */
+}
+
+.carousel-inner img {
+    width: 600px; /* Atur lebar yang Anda inginkan */
+    height: 600px; /* Atur tinggi yang Anda inginkan */
+    object-fit: cover; /* Atur pemadatan objek gambar jika perlu */
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.destination-card {
+            margin-bottom: 20px;
+        }
+        
+        /* Gaya untuk menu pencarian */
+        .search-container {
+            display: flex;
+            justify-content: flex-end;
+            margin: 10px 0;
+        }
+
+        .search-input {
+            width: 200px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .search-button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 5px 10px;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="Bulukumba_Regency_Logo.png" alt="Logo Pariwisata" width="50" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Destinasi.html">Destinasi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Seni Dan Budaya.html">Seni Dan Budaya</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Berita.html">Berita</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Kontak.html">Kontak</a>
+                    </li>
+                </ul>
+                <form class="form-inline">
+                    <input id="search-input" class="form-control mr-sm-2" type="search" placeholder="Cari..." aria-label="Search">
+                    <button id="search-button" class="btn btn-outline-success my-2 my-sm-0" type="button">Cari</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <section id="destinasi" class="container mt-5">
+        <h2 class="display-4" style="font-family:'Times New Roman', Times, serif;">Destinasi</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card destination-card">
+                    <img src="Apparalang.jpeg" alt="Tebing Apparalang" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title destination-title">Tebing Apparalang</h5>
+                        <p class="card-text destination-description">Pantai Appalarang - Deretan tebing di pinggir pantai tanpa pesisir menjadikan pengunjung lebih dekat dengan lautan. Di atas bebatuan, pesona keindahan pantai Appalarang begitu indah. Kamu bisa bersantai lebih lama di sini, sembari mengambil foto untuk feed Instagram.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card destination-card">
+                    <img src="Bira.png" alt="Pantai Bira" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title destination-title">Pantai Bira</h5>
+                        <p class="card-text destination-description">Tanjung Bira adalah pantai yang terletak di Kecamatan Bonto Bahari, sekitar 40 km dari Kota Bulukumba. Pantai yang terkenal dengan pasir putihnya ini sangat nyaman dan mudah dijangkau. Tanjung Bira sangat menarik, para pegunjung dapat melihat para nelayan dengan perahu mereka melaut di malam hari. Ada banyak fasilitas tersedia di Tanjung Bira seperti hotel, villa, dan restorang sepanjang pantai.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card destination-card">
+                    <img src="Liukang Lohe.webp" alt="Liukang Loe" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title destination-title">Liukang Loe</h5>
+                        <p class="card-text destination-description">Pulau Liukang Loe terletak di Depan Kawasan Pantai Bira, Kabupaten Bulukumba, Provinsi Sulawesi Selatan, Indonesia.
+
+                            Pulau Liukang Loe bukan hanya sekedar nama biasa, akan tetapi nama ini memiliki arti tersendiri, karena liukang loe merupakan bahasa yang berasal dari bahasa konjo (salah satu bahasa yang digunakan di kabupaten bulukumba) yang berarti Liu-Liukang berarti Kayu Hitam, dan Loe berarti banyak dan jika disatukan Liukang Loe berarti kayu hitam yang banyak. Nama ini bukan asal diberikan namun memang di pulau ini banyak terdapat kayu hitam, sama dengan namanya</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card destination-card">
+                    <img src="panaikang bira.webp" alt="Panaikang Birayya" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title destination-title">Panaikang Birayya</h5>
+                        <p class="card-text destination-description">Panaikang Birayya sendiri sejatinya adalah destinasi wisata dengan pemandangan alam indah nan mempesona. Di sini kalian bisa melihat eloknya formasi tebing dari ketinggian, ditambah lautan yang begitu jernih. Selain dikenal dengan pantai Biranya yang memiliki pasir yang halus bak terigu, juga ada destinasi wisata lainnya, seperti Panaikang Birayya.
+
+                            Panaikang Birayya terletak di Desa Darubiah, 35 kilometer dari pusat kota Bulukumba, atau 4 kilometer sebelum Tanjung Bira.Kawasan wisata tersebut dikelola oleh masyarakat setempat bernama Edi, di atas lahan seluas 6.000 meter persegi
+.Ditempat ini, pengunjung bisa menikmati banyak tempat foto. mulai dari pondok indah, jembatan pelangi, rumah alang-alang, ayunan, baranda, dan masih banyak yang lainnya.
+Semua dibuat dari bahan seadanya dari alam dan juga memanfaatkan barang bekas dan barang antik, seperti sepeda dan motor.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card destination-card">
+                    <img src="puncak.png" alt="Puncak Pua Janggo" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title destination-title">Puncak Pua Janggo</h5>
+                        <p class="card-text destination-description">Puncak Pua Janggo adalah titik tertinggi di Bira, yang terletak di tengah-tengah dataran Bira. Dari Puncak Pua Janggo, dapat dilihat pemandangan dataran Bira serta laut yang mengelilinginya. Gradasi warna laut dari warna biru muda hingga biru tua dapat diamati dari puncak ini.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card destination-card">
+                    <img src="titik nol.png" alt="Titik Nol" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title destination-title">Titik Nol</h5>
+                        <p class="card-text destination-description">Titik Nol Bulukumba terletak di ujung selatan Tanjung Bira. Penanda 0 kilometer berbentuk bundar yang terbuat dari lempengan baja dan tertanam di dalam tanah. Penanda ini berdiameter sekitar 10 sentimeter dan berwarna kecoklatan. Tempatnya tidak terlalu luas karena berada di ujung tebing yang menjorok ke laut. Hamparan laut terlihat jelas di ujung tanjung. Di samping penanda sudah dibangun tugu titik nol yang berbentuk Perahu Pinisi dengan logo Pemkab Bulukumba serta logo pariwisata Bulukumba pada masing-masing sisi. Di tempat itu juga ada nisan kuburan yang diatapi seadanya. Nisan itu bukan berarti ada yang dikuburkan di tempat tersebut. Nisan dibuat oleh warga setempat sebagai simbol tempat peristirahatan seorang tokoh agama di Bira pada aman dulu.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card destination-card">
+                    <img src="ujung tiro.webp" alt="Ujung Tiro" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title destination-title">Ujung Tiro</h5>
+                        <p class="card-text destination-description">Pantai Ujung Tiro adalah wisata Bulukumba yang tergolong unik. Sebuah pantai yang tidak memiliki pasir pantai, namun tedapat pulau karang kecil yang elok.Lokasi Pantai Ujung Tiro tidak terlalu jauh dari Kabupaten Bulukumba. Jarak dari Bulukumba ke Pantai Ujung Tiro hanya sekitar 31 kilometer, dengan total waktu tempuh 1 jam 15 menit saja.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        function searchInPage(page) {
+            var searchQuery = document.getElementById("search-input").value;
+            var iframe = document.createElement("iframe");
+            iframe.style.display = "none";
+            iframe.src = page;
+    
+            iframe.onload = function () {
+                var iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
+                var pageText = iframeDocument.body.innerText;
+    
+                if (pageText.includes(searchQuery)) {
+                    document.getElementById("searchResults").innerText = "Teks ditemukan di " + page;
+                } else {
+                    document.getElementById("searchResults").innerText = "Teks tidak ditemukan di " + page;
+                }
+    
+                iframe.remove();
+            };
+    
+            document.body.appendChild(iframe);
+        }
+    </script>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+    </html>

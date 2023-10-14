@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pariwisata Kabupaten Bulukumba</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Tautan ke Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Animasi latar belakang */
+       /* Animasi latar belakang */
+.body{
+    animation: gradientBackground 5s ease infinite;
+    background: linear-gradient(45deg, #f1f2f4, #CDFAD5);
+    background-size: 400% 400%;
+    margin: 0;
+}
+
+@keyframes gradientBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Warna teks dan padding untuk konten */
+.content {
+    color: #FFF8C9;
+    padding: 20px;
+}
+
+.navbar {
+    background-color: #2e8bdc;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.navbar-brand {
+    color: #FFCF96;
+}
+
+.nav-link {
+    color: #FFCF96;
+    margin: 0 15px;
+}
+
+.carousel-caption {
+    background: rgba(250, 249, 249, 0.5);
+    color: #1f1f1e;
+}
+
+/* Ukuran maksimum gambar dalam Carousel */
+.carousel-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.body{
+    font-family: Arial, sans-serif; /* Ganti dengan font yang Anda inginkan */
+}
+
+.custom-font {
+    font-family: "Courier New", monospace; /* Font khusus untuk elemen dengan class "custom-font" */
+}
+
+.navbar {
+    border-bottom: 2px solid transparent; /* Garis bawah awalnya transparan */
+}
+
+.navbar a:link,
+.navbar a:visited {
+    text-decoration: none; /* Hilangkan dekorasi tautan */
+}
+
+.navbar a:active,
+.navbar a:hover {
+    border-bottom: 2px solid #FFCF96; /* Warna dan lebar garis bawah saat aktif dan hover */
+}
+
+.navbar a:focus {
+    outline:#FFCF96 /* Hilangkan outline default saat fokus */
+}
+
+/* CSS untuk garis bawah pada navbar setelah diklik */
+.nav-link.active {
+    border-bottom: 2px solid #FFCF96;
+}
+
+.carousel {
+    max-width: 800px; /* Lebar maksimum carousel */
+    margin: 0 auto; /* Pusatkan carousel secara horizontal */
+}
+
+.carousel-inner img {
+    width: 600px; /* Atur lebar yang Anda inginkan */
+    height: 600px; /* Atur tinggi yang Anda inginkan */
+    object-fit: cover; /* Atur pemadatan objek gambar jika perlu */
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.destination-card {
+            margin-bottom: 20px;
+        }
+        
+        /* Gaya untuk menu pencarian */
+        .search-container {
+            display: flex;
+            justify-content: flex-end;
+            margin: 10px 0;
+        }
+
+        .search-input {
+            width: 200px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .search-button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 5px 10px;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="Bulukumba_Regency_Logo.png" alt="Logo Pariwisata" width="50" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Destinasi.html">Destinasi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Seni Dan Budaya.html">Seni Dan Budaya</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Berita.html">Berita</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Kontak.html">Kontak</a>
+                    </li>
+                </ul>
+                <form class="form-inline">
+                    <input id="search-input" class="form-control mr-sm-2" type="search" placeholder="Cari..." aria-label="Search">
+                    <button id="search-button" class="btn btn-outline-success my-2 my-sm-0" type="button">Cari</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <section id="beranda" class="container mt-5 text-center">
+        <h1 class="display-4" style="font-family:'Times New Roman', Times, serif; color: #0d0c0c;">Selamat Datang di Website Pariwisata</h1>
+        <p class="lead" style="font-family: sans-serif; color: #0a0a0a;">Temukan destinasi wisata yang menakjubkan dan nikmati pengalaman yang luar biasa.</p>
+    </section>
+    
+    <div class="container mt-4 text-center">
+        <h5 class="display-4" style="font-family: 'Arial', sans-serif; color: #0d0c0c;">KELOMPOK 11</h5>
+        <p class="lead" style="font-family: 'Roboto', sans-serif; color: #0a0909; font-size: 18px;">
+            <span style="font-weight: bold;">WAHYU AMAL IMRAN</span><br>
+            <span style="font-weight: bold;">WAHYU ILAHI SS</span><br>
+            <span style="font-weight: bold;">ULVITASARI</span><br>
+            <span style="font-weight: bold;">ST TSABITA TAUFIKA PUTRI</span><br>
+        </p>
+    </div>
+    
+    <div class="container mt-5">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
+                <li data-target="#myCarousel" data-slide-to="5"></li>
+                <li data-target="#myCarousel" data-slide-to="6"></li>
+                <li data-target="#myCarousel" data-slide-to="7"></li>
+            </ol>
+
+            <!-- Slides -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="kelmpok11.jpg" alt="Slide 1" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h3>Dokumentasi kelompok 11</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="Apparalang.jpeg" alt="Slide 2" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h3>Tebing Apparalang</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="Bira.png" alt="Slide 3" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h3>Pantai Bira</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="Liukang Lohe.webp" alt="Slide 4" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h3>Liukang loe</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="panaikang bira.webp" alt="Slide 5" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h3>Panaikang birayya</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="puncak.png" alt="Slide 6" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h3>Puncak Pua Janggo</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="titik nol.png" alt="Slide 7" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h3>Titik Nol</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="ujung tiro.webp" alt="Slide 8" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h3>Ujung Tiro</h3>
+                    </div>
+                </div>
+            </div>
+            <!-- Controls -->
+            <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>
+
+    <center>
+        <div class="copyright">
+            &copy; 2023 Kelompok 11.
+        </div>
+    </center>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+    document.getElementById("search-button").addEventListener("click", function () {
+        var searchQuery = document.getElementById("search-input").value;
+        if (searchQuery) {
+            // Arahkan ke halaman Destinasi.html dan Kontak.html dengan query pencarian
+            window.location.href = "Destinasi.html?q=" + searchQuery;
+        }
+    });
+
+    // Atau Anda juga bisa menambahkan event listener untuk menangani pencarian ketika tombol "Enter" ditekan di dalam kotak input
+    document.getElementById("search-input").addEventListener("keydown", function (event) {
+        if (event.key === "Enter") {
+            var searchQuery = document.getElementById("search-input").value;
+            if (searchQuery) {
+                // Arahkan ke halaman Destinasi.html dan Kontak.html dengan query pencarian
+                window.location.href = "Destinasi.html?q=" + searchQuery;  
+            }
+        }
+    });
+</script>
+</body>
+</html>
+
+
+

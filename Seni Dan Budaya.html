@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pariwisata Kabupaten Bulukumba</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Tautan ke Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Animasi latar belakang */
+       /* Animasi latar belakang */
+body {
+    animation: gradientBackground 5s ease infinite;
+    background: linear-gradient(45deg, #f1f2f4, #CDFAD5);
+    background-size: 400% 400%;
+    margin: 0;
+}
+
+@keyframes gradientBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Warna teks dan padding untuk konten */
+.content {
+    color: #FFF8C9;
+    padding: 20px;
+}
+
+.navbar {
+    background-color: #2e8bdc;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.navbar-brand {
+    color: #FFCF96;
+}
+
+.nav-link {
+    color: #FFCF96;
+    margin: 0 15px;
+}
+
+.carousel-caption {
+    background: rgba(250, 249, 249, 0.5);
+    color: #1f1f1e;
+}
+
+/* Ukuran maksimum gambar dalam Carousel */
+.carousel-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.body{
+    font-family: Arial, sans-serif; /* Ganti dengan font yang Anda inginkan */
+}
+
+.custom-font {
+    font-family: "Courier New", monospace; /* Font khusus untuk elemen dengan class "custom-font" */
+}
+
+.navbar {
+    border-bottom: 2px solid transparent; /* Garis bawah awalnya transparan */
+}
+
+.navbar a:link,
+.navbar a:visited {
+    text-decoration: none; /* Hilangkan dekorasi tautan */
+}
+
+.navbar a:active,
+.navbar a:hover {
+    border-bottom: 2px solid #FFCF96; /* Warna dan lebar garis bawah saat aktif dan hover */
+}
+
+.navbar a:focus {
+    outline:#FFCF96 /* Hilangkan outline default saat fokus */
+}
+
+/* CSS untuk garis bawah pada navbar setelah diklik */
+.nav-link.active {
+    border-bottom: 2px solid #FFCF96;
+}
+
+.carousel {
+    max-width: 800px; /* Lebar maksimum carousel */
+    margin: 0 auto; /* Pusatkan carousel secara horizontal */
+}
+
+.carousel-inner img {
+    width: 600px; /* Atur lebar yang Anda inginkan */
+    height: 600px; /* Atur tinggi yang Anda inginkan */
+    object-fit: cover; /* Atur pemadatan objek gambar jika perlu */
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.destination-card {
+            margin-bottom: 20px;
+        }
+        
+        /* Gaya untuk menu pencarian */
+        .search-container {
+            display: flex;
+            justify-content: flex-end;
+            margin: 10px 0;
+        }
+
+        .search-input {
+            width: 200px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .search-button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 5px 10px;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="Bulukumba_Regency_Logo.png" alt="Logo Pariwisata" width="50" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Destinasi.html">Destinasi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Seni Dan Budaya.html">Seni Dan Budaya</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Berita.html">Berita</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Kontak.html">Kontak</a>
+                    </li>
+                </ul>
+                <form class="form-inline">
+                    <input id="search-input" class="form-control mr-sm-2" type="search" placeholder="Cari..." aria-label="Search">
+                    <button id="search-button" class="btn btn-outline-success my-2 my-sm-0" type="button">Cari</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <section id="galeri" class="container mt-5">
+        <h2 class="display-4" style="font-family:'Times New Roman', Times, serif;">Seni Dan Budaya</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="OIP.jpg" alt="Foto 1" class="card-img-top" height="200">
+                    <div class="card-body">
+                        <h5 class="card-title">Kompleks Makam Dea Dg. Lita</h5>
+                        <a href="deskripsi1.html" class="card-text">Deskripsi lengkap tentang makam ini. Berisi informasi sejarah dan karakteristiknya.</p>
+                        <a href="deskripsi1.html" class="btn btn-primary read-more">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="parakassi dg maloga.jpg" alt="Foto 2" class="card-img-top" height="200">
+                    <div class="card-body">
+                        <h5 class="card-title">Makam Parakkasi dg Maloga</h5>
+                        <a href="deskripsi2.html" class="card-text">Deskripsi lengkap tentang makam ini. Berisi informasi sejarah dan karakteristiknya.</p>
+                        <a href="deskripsi2.html" class="btn btn-primary read-more">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="dato tiro.jpg" alt="Foto 3" class="card-img-top" height="200">
+                    <div class="card-body">
+                        <h5 class="card-title">Kompleks Makam Datuk Tiro</h5>
+                        <a href="deskripsi3.html" class="card-text">Deskripsi lengkap tentang makam ini. Berisi informasi sejarah dan karakteristiknya.</p>
+                        <a href="deskripsi3.html" class="btn btn-primary read-more">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="leang passea.jpg" alt="Foto 4" class="card-img-top" height="200">
+                    <div class="card-body">
+                        <h5 class="card-title">Leang Passea</h5>
+                        <a href="deskripsi4.html" class="card-text">Deskripsi lengkap tentang gua Leang Passea beserta informasi sejarahnya.</a>
+                        <a href="deskripsi4.html" class="btn btn-primary read-more">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="petta.jpg" alt="Foto 5" class="card-img-top" height="200">
+                    <div class="card-body">
+                        <h6 class="card-title">Kompleks Makam Petta Matinroe Ri Tasi’na</h6>
+                        <a href="deskripsi5.html" class="card-text">Deskripsi lengkap kompleks makam ini dan sejarah tokoh Petta Matinroe Ri Tasi’na.</a>
+                        <a href="deskripsi5.html" class="btn btn-primary read-more">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="lontara.jpg" alt="Foto 6" class="card-img-top" height="200">
+                    <div class="card-body">
+                        <h5 class="card-title">Bahasa Daerah di Kab. Bulukumba</h5>
+                        <a href="deskripsi6.html" class="card-text">Deskripsi lengkap tentang bahasa dan dialek di Kabupaten Bulukumba.</p>
+                        <a href="deskripsi6.html" class="btn btn-primary read-more">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="anyinyorong lopi.jpg" alt="Foto 7" class="card-img-top" height="200">
+                    <div class="card-body">
+                        <h5 class="card-title">Annyorong lopi</h5>
+                        <a href="deskripsi7.html" class="card-text">Deskripsi lengkap tentang upacara annyorong lopi dan makna di baliknya.</p>
+                        <a href="deskripsi7.html" class="btn btn-primary read-more">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="phinisi.jpg" alt="Foto 8" class="card-img-top" height="200">
+                    <div class="card-body">
+                        <h5 class="card-title">Kapal phinisi</h5>
+                        <a href="deskripsi8.html" class="card-text">Informasi tentang kapal phinisi dan peranannya dalam budaya Sulawesi Selatan.</p>
+                        <a href="deskripsi8.html" class="btn btn-primary read-more">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="balla.jpg" alt="Foto 9" class="card-img-top" height="200">
+                    <div class="card-body">
+                        <h5 class="card-title">Balla To Kajang (Rumah Kajang)</h5>
+                        <a href="deskripsi9.html"  class="card-text">Deskripsi lengkap tentang Balla To Kajang (Rumah Kajang) dan karakteristiknya.</p>
+                        <a href="deskripsi9.html" class="btn btn-primary read-more">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Include Bootstrap JS (optional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function searchInPage(page) {
+            var searchQuery = document.getElementById("search-input").value;
+            var iframe = document.createElement("iframe");
+            iframe.style.display = "none";
+            iframe.src = page;
+    
+            iframe.onload = function () {
+                var iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
+                var pageText = iframeDocument.body.innerText;
+    
+                if (pageText.includes(searchQuery)) {
+                    document.getElementById("searchResults").innerText = "Teks ditemukan di " + page;
+                } else {
+                    document.getElementById("searchResults").innerText = "Teks tidak ditemukan di " + page;
+                }
+    
+                iframe.remove();
+            };
+    
+            document.body.appendChild(iframe);
+        }
+    </script>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+

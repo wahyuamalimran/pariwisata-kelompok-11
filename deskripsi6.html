@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pariwisata Kabupaten Bulukumba</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Tautan ke Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Animasi latar belakang */
+       /* Animasi latar belakang */
+body {
+    animation: gradientBackground 5s ease infinite;
+    background: linear-gradient(45deg, #f1f2f4, #CDFAD5);
+    background-size: 400% 400%;
+    margin: 0;
+}
+
+@keyframes gradientBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Warna teks dan padding untuk konten */
+.content {
+    color: #FFF8C9;
+    padding: 20px;
+}
+
+.navbar {
+    background-color: #2e8bdc;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.navbar-brand {
+    color: #FFCF96;
+}
+
+.nav-link {
+    color: #FFCF96;
+    margin: 0 15px;
+}
+
+.carousel-caption {
+    background: rgba(250, 249, 249, 0.5);
+    color: #1f1f1e;
+}
+
+/* Ukuran maksimum gambar dalam Carousel */
+.carousel-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.body{
+    font-family: Arial, sans-serif; /* Ganti dengan font yang Anda inginkan */
+}
+
+.custom-font {
+    font-family: "Courier New", monospace; /* Font khusus untuk elemen dengan class "custom-font" */
+}
+
+.navbar {
+    border-bottom: 2px solid transparent; /* Garis bawah awalnya transparan */
+}
+
+.navbar a:link,
+.navbar a:visited {
+    text-decoration: none; /* Hilangkan dekorasi tautan */
+}
+
+.navbar a:active,
+.navbar a:hover {
+    border-bottom: 2px solid #FFCF96; /* Warna dan lebar garis bawah saat aktif dan hover */
+}
+
+.navbar a:focus {
+    outline:#FFCF96 /* Hilangkan outline default saat fokus */
+}
+
+/* CSS untuk garis bawah pada navbar setelah diklik */
+.nav-link.active {
+    border-bottom: 2px solid #FFCF96;
+}
+
+
+.carousel {
+    max-width: 800px; /* Lebar maksimum carousel */
+    margin: 0 auto; /* Pusatkan carousel secara horizontal */
+}
+
+.carousel-inner img {
+    width: 600px; /* Atur lebar yang Anda inginkan */
+    height: 600px; /* Atur tinggi yang Anda inginkan */
+    object-fit: cover; /* Atur pemadatan objek gambar jika perlu */
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.destination-card {
+            margin-bottom: 20px;
+        }
+        
+        /* Gaya untuk menu pencarian */
+        .search-container {
+            display: flex;
+            justify-content: flex-end;
+            margin: 10px 0;
+        }
+
+        .search-input {
+            width: 200px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .search-button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 5px 10px;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="Bulukumba_Regency_Logo.png" alt="Logo Pariwisata" width="50" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Destinasi.html">Destinasi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Seni Dan Budaya.html">Seni Dan Budaya</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Berita.html">Berita</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Kontak.html">Kontak</a>
+                    </li>
+                </ul>
+                <form class="form-inline">
+                    <input id="search-input" class="form-control mr-sm-2" type="search" placeholder="Cari..." aria-label="Search">
+                    <button id="search-button" class="btn btn-outline-success my-2 my-sm-0" type="button">Cari</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <section id="galeri" class="container mt-5">
+        <h2></h2>
+        <div class="row">
+            <div class="col-md-12">
+                <a href="Seni Dan Budaya.html" class="btn btn-primary back-button">
+                    <i class="fas fa-arrow-left"></i> Kembali ke Seni dan Budaya
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-15">
+                <center>
+                <img src="lontara.jpg" alt="Foto 2" class="img-fluid">
+                <h4>Bahasa Daerah Kab.Bulukumba</h4>
+                <p>
+                    Bugis : Bahasa Bugis merupakan bahasa yang bertanah asal di Sulawesi Selatan. Bahasa Bugis terdiri atas dua puluh tujuh dialek. Dialek-dialek tersebut adalah (1) dialek Bone, (2) dialek Pangkep, (3) dialek Makassar,(4) dialek Pare-Pare, (5) dialek Wajo, (6) dialek Sidenreng Rappang, (7) dialek Sopeng, (8) dialek Sinjai, (9) dialek Pinrang, (10) dialek Malimpung, (11) dialek Dentong, (12) dialek Pattinjo, (13) dialek Kaluppang, (14) dialek Maiwa, (15) dialek Maroangin, (16) dialek Wani, (17) dialek Bugis Kayowa, (18) dialek Buol Pamoyagon (Bugis Pomayagon), (19) dialek Buol Bokat (Bugis Bokat), (20) dialek Jambi, (21) dialek Kalimantan Selatan, (22) dialek Lampung, (23) dialek Sulawesi Tenggara, (24) dialek Bali, (25) dialek Sulawesi Tengah, (26) dialek Riau, dan (27) dialek Kalimantan Timur.
+
+Konjo : Bahasa Konjo dituturkan oleh masyarakat yang berada di Desa Bira, Ara, Kecamatan Bonto Bahari dan Desa Possi Tanah, Kecamatan Kajang, Kabupaten Bulukumba, Provinsi Sulawesi Selatan.
+
+Makassar : Bahasa Makassar terdapat di Kabupaten Gowa, Takalar, Jeneponto, Bantaeng, Maros, Pangkajene Kepulauan, Kepulauan Selayar, dan Kota Makassar Provinsi Sulawesi Selatan.</p>
+                </center>    
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tambahkan Font Awesome untuk ikon panah kembali -->
+    <script>
+        function searchInPage(page) {
+            var searchQuery = document.getElementById("search-input").value;
+            var iframe = document.createElement("iframe");
+            iframe.style.display = "none";
+            iframe.src = page;
+    
+            iframe.onload = function () {
+                var iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
+                var pageText = iframeDocument.body.innerText;
+    
+                if (pageText.includes(searchQuery)) {
+                    document.getElementById("searchResults").innerText = "Teks ditemukan di " + page;
+                } else {
+                    document.getElementById("searchResults").innerText = "Teks tidak ditemukan di " + page;
+                }
+    
+                iframe.remove();
+            };
+    
+            document.body.appendChild(iframe);
+        }
+    </script>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+    </html>

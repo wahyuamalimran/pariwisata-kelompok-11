@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pariwisata Kabupaten Bulukumba</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Tautan ke Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Animasi latar belakang */
+       /* Animasi latar belakang */
+body {
+    animation: gradientBackground 5s ease infinite;
+    background: linear-gradient(45deg, #f1f2f4, #CDFAD5);
+    background-size: 400% 400%;
+    margin: 0;
+}
+
+@keyframes gradientBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Warna teks dan padding untuk konten */
+.content {
+    color: #FFF8C9;
+    padding: 20px;
+}
+
+.navbar {
+    background-color: #2e8bdc;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.navbar-brand {
+    color: #FFCF96;
+}
+
+.nav-link {
+    color: #FFCF96;
+    margin: 0 15px;
+}
+
+.carousel-caption {
+    background: rgba(250, 249, 249, 0.5);
+    color: #1f1f1e;
+}
+
+/* Ukuran maksimum gambar dalam Carousel */
+.carousel-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.body{
+    font-family: Arial, sans-serif; /* Ganti dengan font yang Anda inginkan */
+}
+
+.custom-font {
+    font-family: "Courier New", monospace; /* Font khusus untuk elemen dengan class "custom-font" */
+}
+
+.navbar {
+    border-bottom: 2px solid transparent; /* Garis bawah awalnya transparan */
+}
+
+.navbar a:link,
+.navbar a:visited {
+    text-decoration: none; /* Hilangkan dekorasi tautan */
+}
+
+.navbar a:active,
+.navbar a:hover {
+    border-bottom: 2px solid #FFCF96; /* Warna dan lebar garis bawah saat aktif dan hover */
+}
+
+.navbar a:focus {
+    outline:#FFCF96 /* Hilangkan outline default saat fokus */
+}
+
+/* CSS untuk garis bawah pada navbar setelah diklik */
+.nav-link.active {
+    border-bottom: 2px solid #FFCF96;
+}
+
+
+.carousel {
+    max-width: 800px; /* Lebar maksimum carousel */
+    margin: 0 auto; /* Pusatkan carousel secara horizontal */
+}
+
+.carousel-inner img {
+    width: 600px; /* Atur lebar yang Anda inginkan */
+    height: 600px; /* Atur tinggi yang Anda inginkan */
+    object-fit: cover; /* Atur pemadatan objek gambar jika perlu */
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.destination-card {
+            margin-bottom: 20px;
+        }
+        
+        /* Gaya untuk menu pencarian */
+        .search-container {
+            display: flex;
+            justify-content: flex-end;
+            margin: 10px 0;
+        }
+
+        .search-input {
+            width: 200px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .search-button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 5px 10px;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="Bulukumba_Regency_Logo.png" alt="Logo Pariwisata" width="50" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Destinasi.html">Destinasi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active href="Seni Dan Budaya.html">Seni Dan Budaya</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Berita.html">Berita</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Kontak.html">Kontak</a>
+                    </li>
+                </ul>
+                <form class="form-inline">
+                    <input id="search-input" class="form-control mr-sm-2" type="search" placeholder="Cari..." aria-label="Search">
+                    <button id="search-button" class="btn btn-outline-success my-2 my-sm-0" type="button">Cari</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <section id="galeri" class="container mt-5">
+        <h2></h2>
+        <div class="row">
+            <div class="col-md-12">
+                <a href="Seni Dan Budaya.html" class="btn btn-primary back-button">
+                    <i class="fas fa-arrow-left"></i> Kembali ke Seni dan Budaya
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-15">
+                <center>
+                <img src="phinisi.jpg" alt="Foto 2" class="img-fluid">
+                <h4>Kapal phinisi</h4>
+                <p>
+                    Pinisi, Seni Pembuatan Kapal di Sulawesi Selatan, mengacu pada anjungan dan layar ‘Sulawesi schooner’ yang terkenal. Konstruksi dan penyebaran kapal-kapal semacam itu merupakan tradisi ribuan tahun pembuatan kapal dan navigasi Austronesia yang telah melahirkan berbagai macam kapal air canggih. Bagi masyarakat Indonesia dan publik internasional, Pinisi telah menjadi lambang kapal layar pribumi Nusantara. Saat ini, pusat-pusat pembuatan kapal terletak di Tana Beru, Bira dan Batu Licin, dimana sekitar 70 persen populasi mencari nafkah melalui pekerjaan yang terkait dengan pembuatan kapal dan navigasi. Namun, pembuatan kapal dan pelayaran tidak hanya menjadi andalan ekonomi masyarakat, tetapi juga merupakan fokus utama dari kehidupan dan identitas sehari-hari. Kerjasama timbal balik antara komunitas pembuat kapal dan hubungan mereka dengan pelanggan mereka memperkuat saling pengertian antara pihak-pihak yang terlibat. Pengetahuan dan keterampilan yang terkait dengan elemen diturunkan dari generasi ke generasi di dalam lingkaran keluarga, serta kepada individu di luar keluarga melalui pembagian kerja. Komunitas, kelompok, dan individu yang terlibat secara aktif terlibat dalam upaya pengamanan, misalnya melalui inisiatif pemasaran dan penerbitan buku tentang masalah tersebut.
+
+                    Ditetapkan oleh Unesco pada tanggal 07/12/2017. Pinisi: Seni Pembuatan Perahu di Sulawesi Selatan (Art of boatbuilding in South Sulawesi) yang sebelumnya sudah ditetapkan oleh Menteri pada 13 Desember 2013 dengan nomor 238/M/2013 dengan Domain: Pengetahuan dan Kebiasaan Perilaku Mengenai Alam dan Semesta.
+                    
+                    Deskripsi dan Sejarah Perahu pinisi : Sejarah Perahu pinisi merupakan jenis perahu tradisional yang merupakan hasil dari teknologi tradisional masyarakat Bugis di Sulawesi Selatan. Perahu pinisi mempunyai ciri memiliki dua tiang layar utama dan tujug buah layar; tiga buah layar di ujung depan, dua di tengah, dan d0075a di belakang. Perahu ini memiliki fungsi utama sebagai pengangkut barang antar pulau. Tidak diketahui secara jelas asal-usul dari nama pinisi, tetapi terdapat dua teori mengenai asal-usul penamaan pinisi. Teori pertama menyatakan bahwa pinisi berasal dari kata Venecia, sebuah kota pelabuhan di Italia. Diduga dari kata venecia inilah kemudian berubah menjadi penisi menurut dialek Konjo yang selanjutnya mengalami proses fonemik menjadi pinisi. Pengambilan nama kota tersebut diperkiran didasari atas kebiasaan orang Bugis Makassar mengabadikan nama tempat terkenal atau mempunyai kesan istimewa kepada benda kesayangannya, termasuk perahu.
+                    
+                    Sementara teori kedua berpendapat bahwa nama pinisi berasal dari kata panisi yang memiliki arti sisip. Mappanisi (menyisip) yaitu menyumbat semua persambungan papan, dinding, dan lantai perahu dengan bahan tertentu agar tidak kemasukan air. Dugaan tersebut berdasar pada pendapat yang menyatakan bahwa orang Bugis yang pertama menggunakan perahu pinisi. Lopi dipanisi’ (Bugis) artinya perahu yang disisip. Diduga dari kata pinisi mengalami proses fonemik menjadi pinisi
+                    
+                    Untuk bentuk perahu pinisi sendiri diperkirakan merupakan pengembangan dari perahu panjala. Panjala sendiri merupakan perahu yang dipergunakan nelayan untuk menjala (menangkap ikan), namun nama tersebut kemudian menjadi nama jenis perahu. Hubungan antara perahu panjala dengan pinisi terlihat dari bentuk lambung perahu pinisi yang memiliki kesamaan dengan perahu panjala.</p>
+                </center>    
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function searchInPage(page) {
+            var searchQuery = document.getElementById("search-input").value;
+            var iframe = document.createElement("iframe");
+            iframe.style.display = "none";
+            iframe.src = page;
+    
+            iframe.onload = function () {
+                var iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
+                var pageText = iframeDocument.body.innerText;
+    
+                if (pageText.includes(searchQuery)) {
+                    document.getElementById("searchResults").innerText = "Teks ditemukan di " + page;
+                } else {
+                    document.getElementById("searchResults").innerText = "Teks tidak ditemukan di " + page;
+                }
+    
+                iframe.remove();
+            };
+    
+            document.body.appendChild(iframe);
+        }
+    </script>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+    </html>

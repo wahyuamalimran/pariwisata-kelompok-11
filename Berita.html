@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pariwisata Kabupaten Bulukumba</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Tautan ke Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Animasi latar belakang */
+       /* Animasi latar belakang */
+.body{
+    animation: gradientBackground 5s ease infinite;
+    background: linear-gradient(45deg, #f1f2f4, #fbfdfc);
+    background-size: 400% 400%;
+    margin: 0;
+}
+
+@keyframes gradientBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Warna teks dan padding untuk konten */
+.content {
+    color: #FFF8C9;
+    padding: 20px;
+}
+
+.navbar {
+    background-color: #2e8bdc;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.navbar-brand {
+    color: #FFCF96;
+}
+
+.nav-link {
+    color: #FFCF96;
+    margin: 0 15px;
+}
+
+.carousel-caption {
+    background: rgba(250, 249, 249, 0.5);
+    color: #1f1f1e;
+}
+
+/* Ukuran maksimum gambar dalam Carousel */
+.carousel-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.body{
+    font-family: Arial, sans-serif; /* Ganti dengan font yang Anda inginkan */
+}
+
+.custom-font {
+    font-family: "Courier New", monospace; /* Font khusus untuk elemen dengan class "custom-font" */
+}
+
+.navbar {
+    border-bottom: 2px solid transparent; /* Garis bawah awalnya transparan */
+}
+
+.navbar a:link,
+.navbar a:visited {
+    text-decoration: none; /* Hilangkan dekorasi tautan */
+}
+
+.navbar a:active,
+.navbar a:hover {
+    border-bottom: 2px solid #FFCF96; /* Warna dan lebar garis bawah saat aktif dan hover */
+}
+
+.navbar a:focus {
+    outline:#FFCF96 /* Hilangkan outline default saat fokus */
+}
+
+/* CSS untuk garis bawah pada navbar setelah diklik */
+.nav-link.active {
+    border-bottom: 2px solid #FFCF96;
+}
+
+.carousel {
+    max-width: 800px; /* Lebar maksimum carousel */
+    margin: 0 auto; /* Pusatkan carousel secara horizontal */
+}
+
+.carousel-inner img {
+    width: 600px; /* Atur lebar yang Anda inginkan */
+    height: 600px; /* Atur tinggi yang Anda inginkan */
+    object-fit: cover; /* Atur pemadatan objek gambar jika perlu */
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.destination-card {
+            margin-bottom: 20px;
+        }
+        
+        /* Gaya untuk menu pencarian */
+        .search-container {
+            display: flex;
+            justify-content: flex-end;
+            margin: 10px 0;
+        }
+
+        .search-input {
+            width: 200px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .search-button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 5px 10px;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+        .body{
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .h1{
+            text-align: center;
+            color: #333;
+        }
+        .card {
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+        .card-body {
+            padding: 20px;
+        }
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #333;
+        }
+        .card-text {
+            color: #666;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="Bulukumba_Regency_Logo.png" alt="Logo Pariwisata" width="50" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Destinasi.html">Destinasi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Seni Dan Budaya.html">Seni Dan Budaya</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Berita.html">Berita</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Kontak.html">Kontak</a>
+                    </li>
+                </ul>
+                <form class="form-inline">
+                    <input id="search-input" class="form-control mr-sm-2" type="search" placeholder="Cari..." aria-label="Search">
+                    <button id="search-button" class="btn btn-outline-success my-2 my-sm-0" type="button">Cari</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <section id="berita" class="container mt-5">
+        <h5 class="display-4" style="font-family: 'Arial', sans-serif; color: #0d0c0c;">Berita</h5>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="kepala-dinas-pariwisata-bakal-dilantik-sebagai-sekda-bulukumba-dbq.jpg" alt="Berita 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Kepala Dinas Pariwisata Bakal Dilantik Sebagai Sekda Bulukumba</h5>
+                        <p class="card-text">Kepala Dinas Parawisata Bulukumba Muh Ali Saleng bakal dilantik sebagai Sekertari Daerah (Sekda) Pemerintah Kabupaten Bulukumba. Bupati Bulukumba Andi Muchtar Ali Yusuf mengungkapkan bahwa, proses pengisian jabatan Sekda Bulukumba sisa menunggu waktu pelantikan. "(Sekda) sudah ditetapkan dan tunggu waktu pelantikan," ungkap Andi Utta sapaannya saat dikonfirmasi.Diketahui, sebelumnya terdapat 3 nama yang dinyatakan lulus seleksi di antaranya, Kepala Dinas Parawisata Bulukumba Muh Ali Saleng, Kepala Dinas Pemberdayaan Perempuan dan Perlindungan Anak (DP3A) Bulukumba Umrah Uswani, dan Kepala Dinas Lingkungan Hidup dan Kehutanan (DLHK) Kabupaten Sinjai Muh Ramlan Hamid. Andi Utta membeberkan bahwa Ali Saleng lah yang terpilih menjadi Sekda dari tiga nama calon sekda yang sebelumnya diserahkan oleh Tim Pansel tersebut. "Sudah saya umumkan calon sekda. (Yang terpilih) Pak Ali Saleng," tukas Andi Utta. Sementara itu, Ali Saleng yang dikonfirmasi mengaku belum mengetahui kabar soal penetapan dirinya sebagai sekda. "Sampai saat ini saya belum dapat informasi, kalau soal itu (penetapan Sekda) Pak Bupati dan bagian kepegawaian yang tahu," katanya. Kendati demikian, Ali Saleng mengaku siap menerima dan menjalankan apapun keputusan yang dikeluarkan oleh Bupati Bulukumba sebagai pimpinannya. "Kalau kita ini sebagai bawahan apapun keputusan pimpinan itu yang kita jalankan, saya selalu siap menjalankan kebijakan dari pimpinan," pungkasnya.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="dihantam-angin-klm-pinisi-milik-dinas-pariwisata-bulukumba-nyaris-tenggelam-dzf.jpg" alt="Berita 1" width="400" height="300">
+                    <div class="card-body">
+                        <h5 class="card-title">Dihantam Angin, KLM Pinisi Milik Dinas Pariwisata Bulukumba Nyaris Tenggelam</h5>
+                        <p class="card-text">Kapal Layar Motor (KLM) Pinisi Panrita Lopi milik Dinas Pariwisata Kabupaten Bulukumba akhirnya kembali mengapung setelah nyaris tenggelam pada Sabtu 31 Oktober kemarin. Kapal hibah dari salah seorang pembuat kapal tersebut, nyaris tenggelam setelah kemasukan air.Kepala Dinas Pariwisata Bulukumba, Muhammad Ali Saleng menjelaskan, air masuk ke dalam kapal setelah balok penyangga samping atau kengkeng kapal tersangkut akibat dihantam angin kencang. "Rencana balok itu akan kita buka pagi hari sebelum ke Bira. Ternyata tersangkut pada tali rumpon sehingga menyebabkan kapal miring, air masuk melalui jendela bulat. Kebetulan terbuka sampai akhirnya seluruh badan kapal penuh air sampai top deck," terang Muhammad Ali Saleng.Menurut Ali Saleng, pada Jumat 30 Oktober lalu, sekitar pukul 04.00 Wita angin kencang menerjang sebagian wilayah Bulukumba. Angin kencang itu juga disertai hujan. Wilayah yang diterjang salah satunyalokasi kapal pinisi tersebut sandar. "Ternyata ada bekas rumpon atau fondasi rumput laut di situ," jelasnya. Dia menerangkan, setelah terendam, kapal pinisi Panrita Lopi milik Dinas Pariwisata Bulukumba itu berhasil dievakuasi. Badan kapal tidak mengalami kerusakan sehingga kembali terapung pada pukul 02.00 Wita dini hari tadi. "Kapal sudah mulai terapung kembali, termasuk lantai 2 kamar kapten dan fasilitas karaoke sudah tidak ada airnya. Mesin penggerak utama dan cadangan (ex mesin kapal Banawa) serta genset akan segera dilakukan pencucian oleh teknisi mesin setelah terapung seperti semula," tutup dia.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="berita bira.jpg" alt="Berita 1" width="400" height="300">
+                    <div class="card-body">
+                        <h5 class="card-title">Kawasan Wisata Tanjung Bira Bulukumba Jadi Idaman Warga Saat Libur Lebaran</h5>
+                        <p class="card-text">Kawasan wisata Tanjung Bira di Kabupaten Bulukumba, Sulawesi Selatan (Sulsel) jadi idaman warga saat libur Lebaran. Sebanyak 6.210 pengunjung menyerbu destinasi wisata bahari di wilayah tersebut.
+                            "Posisi (data 6.210 pengunjung) sampai jam 17.00 Wita," beber Kepala Dinas Pariwisata (Dispar) Bulukumba Daud Kahal saat dihubungi detikSulsel, Selasa (3/4/2022).
+                            
+                            Total pengunjung tersebut terdiri dari 5.141 orang dewasa dan 1.069 anak-anak. Lonjakan wisatawan ini membuat loket pelayanan akses masuk ke kawasan Tanjung Bira ditambah.
+                            "Kita buka 2 loket pembayaran. Memisahkan pelayanan mobil dan motor," sebut dia.
+                            Pasalnya terdata 1.429 kendaraan yang akan masuk ke kawasan Tanjung Bira dari total 6.210 pengunjung. Rinciannya, 809 mobil, 597 sepeda motor, dan 23 bus.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="festival.jpg" alt="Berita 1" width="400" height="300">
+                    <div class="card-body">
+                        <h5 class="card-title">Ragam Ritual Budaya Bakal Disajikan di Festival Pinisi XII di Bulukumba</h5>
+                        <p class="card-text">Festival Pinisi ke XII akan diselenggarakan di Kabupaten Bulukumba, Sulawesi Selatan. Perpaduan nuansa budaya dan ritual, ragam lomba dan seni pertunjukan akan disuguhkan dalam festival ini. 
+
+                            Beberapa yang akan disajikan antara lain ritual budaya 'Songkabala ri Bantilang', juga 'Anyyorong Lopi', penanaman kayu bitti sebagai upaya pelestarian bahan perahu Pinisi dan pelepasan tukik.
+                            
+                            Kepala Dinas Pariwisata, Pemuda dan Olahraga Kabupaten Bulukumba Muhammad Daud Kahal menuturkan, Festival Pinisi ke-12 yang akan dihelat pada pertengahan September 2022 masuk dalam 100 acara "Wonderful Indonesia" Kementerian Pariwisata dan Ekonomi Kreatif (Kemenparekraf) pada 2022.
+                            
+                            "Festival Pinisi yang akan digelar pada 14 - 17 September 2022 di kawasan Tanjung Bira, Bulukumba ini, merupakan salah satu dari 100 event 'Wonderful Indonesia'," kata Muhammad Daud di sela kehadirannya pada Festival Mulo ke-3 di Gedung Mulo, Kota Makassar, belum lama ini. 
+                            
+                            Sebagai salah satu tujuan utama destinasi wisata di Sulawesi Selatan, pihaknya sudah mematangkan sejumlah rangkaian persiapan kegiatan festival perahu tradisional Pinisi ke-12. Dia pun optimistis festival ini dapat menyedot pengunjung untuk datang menikmati sejumlah atraksi dan objek wisata di Bumi Panritalopi ini.
+                            
+                            Ragam lomba pun dihadirkan seperti lomba video pendek terkait pariwisata, lomba kuliner dan lomba pertunjukan formasi perahu Phinisi di lokasi pembukaan dan penutupan festival. Berkaitan dengan berbagai kegiatan tersebut, Muhammad Daud optimistis untuk semakin memantapkan Kabupaten Bulukumba sebagai daerah pembuat perahu Phinisi di Indonesia dan kemasyhuran perahu itu hingga ke mancanegara terus terjaga. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <img src="kue kajang.webp" alt="Berita 1">
+                        <div class="card-body">
+                        <h5 class="card-title"> Kehidupan Suku Kajang, Bulukumba</h5>
+                        <p class="card-text">Salah satu suku yang memiliki kehidupan yang berbeda dengan suku lainnya di Bulukumba adalah Suku Kajang. Suku ini salah satu suku yang tinggal di pedalaman Bulukumba.
+
+                            Bagi mereka, daerah tersebut dianggap sebagai tanah warisan leluhur dan mereka menyebutnya, Tana Toa. Kawasan adat ini dipimpin oleh seorang pemimpin yang bergelar Amma Toa.
+                            
+                            Suku Kajang identik dengan kepercayaan yang sangat kuat, yang membedakannya dengan budaya- budaya lainnya, yakni bukan hanya soal berpakaian hitam- hitam setiap harinya, tetapi juga keyakinan mereka yang sangat kuat. Siapa saja yang memasuki kawasan adat tersebut, ditekankan untuk melepas alas kaki.
+                            
+                            Selain itu, dianjurkan pula untuk memakai pakaian berwarna hitam dan tidak menggunakan kendaraan apapun. Masyarakat Suku Kajang memang diikat aturan agar masyarakatnya bertutur kata baik. Tidak mengeluarkan bahasa yang tidak sedap didengar. Kata Amma Toa, "Bahasa kotor dilarang. Kalau ada, didenda beli pakaian dua juta".
+                            
+                            Masyarakat Suku Kajang juga dikenal dengan keterampilannya menenun. Hal ini dijadikan sebagai sumber pendapatan masyarakatnya. Selain menenun, sumber penghasilan warga Suku Kajang adalah bertani dan berkebun. Hasil pertanian dan perkebunan dijual di pasar-pasar tradisional di luar kawasan adat Suku Kajang.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            </section>
+    </section>
+    <script>
+        function searchInPage(page) {
+            var searchQuery = document.getElementById("search-input").value;
+            var iframe = document.createElement("iframe");
+            iframe.style.display = "none";
+            iframe.src = page;
+    
+            iframe.onload = function () {
+                var iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
+                var pageText = iframeDocument.body.innerText;
+    
+                if (pageText.includes(searchQuery)) {
+                    document.getElementById("searchResults").innerText = "Teks ditemukan di " + page;
+                } else {
+                    document.getElementById("searchResults").innerText = "Teks tidak ditemukan di " + page;
+                }
+    
+                iframe.remove();
+            };
+    
+            document.body.appendChild(iframe);
+        }
+    </script>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+    </html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pariwisata Kabupaten Bulukumba</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Tautan ke Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Animasi latar belakang */
+       /* Animasi latar belakang */
+body {
+    animation: gradientBackground 5s ease infinite;
+    background: linear-gradient(45deg, #f1f2f4, #CDFAD5);
+    background-size: 400% 400%;
+    margin: 0;
+}
+
+@keyframes gradientBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Warna teks dan padding untuk konten */
+.content {
+    color: #FFF8C9;
+    padding: 20px;
+}
+
+.navbar {
+    background-color: #2e8bdc;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.navbar-brand {
+    color: #FFCF96;
+}
+
+.nav-link {
+    color: #FFCF96;
+    margin: 0 15px;
+}
+
+.carousel-caption {
+    background: rgba(250, 249, 249, 0.5);
+    color: #1f1f1e;
+}
+
+/* Ukuran maksimum gambar dalam Carousel */
+.carousel-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.body{
+    font-family: Arial, sans-serif; /* Ganti dengan font yang Anda inginkan */
+}
+
+.custom-font {
+    font-family: "Courier New", monospace; /* Font khusus untuk elemen dengan class "custom-font" */
+}
+
+.navbar {
+    border-bottom: 2px solid transparent; /* Garis bawah awalnya transparan */
+}
+
+.navbar a:link,
+.navbar a:visited {
+    text-decoration: none; /* Hilangkan dekorasi tautan */
+}
+
+.navbar a:active,
+.navbar a:hover {
+    border-bottom: 2px solid #FFCF96; /* Warna dan lebar garis bawah saat aktif dan hover */
+}
+
+.navbar a:focus {
+    outline:#FFCF96 /* Hilangkan outline default saat fokus */
+}
+
+.navbar a:active,
+.navbar a:hover,
+.navbar a:focus {
+    border-bottom: 2px solid #FFCF96; /* Warna dan lebar garis bawah saat aktif, hover, dan fokus */
+}
+
+/* CSS untuk garis bawah pada navbar setelah diklik */
+.nav-link.active {
+    border-bottom: 2px solid #FFCF96;
+}
+
+
+.carousel {
+    max-width: 800px; /* Lebar maksimum carousel */
+    margin: 0 auto; /* Pusatkan carousel secara horizontal */
+}
+
+.carousel-inner img {
+    width: 600px; /* Atur lebar yang Anda inginkan */
+    height: 600px; /* Atur tinggi yang Anda inginkan */
+    object-fit: cover; /* Atur pemadatan objek gambar jika perlu */
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.destination-card {
+            margin-bottom: 20px;
+        }
+        
+        /* Gaya untuk menu pencarian */
+        .search-container {
+            display: flex;
+            justify-content: flex-end;
+            margin: 10px 0;
+        }
+
+        .search-input {
+            width: 200px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .search-button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 5px 10px;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+</style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="Bulukumba_Regency_Logo.png" alt="Logo Pariwisata" width="50" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Destinasi.html">Destinasi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Seni Dan Budaya.html">Seni Dan Budaya</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Berita.html">Berita</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Kontak.html">Kontak</a>
+                    </li>
+                </ul>
+                <form class="form-inline">
+                    <input id="search-input" class="form-control mr-sm-2" type="search" placeholder="Cari..." aria-label="Search">
+                    <button id="search-button" class="btn btn-outline-success my-2 my-sm-0" type="button">Cari</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <section id="galeri" class="container mt-5">
+        <h2></h2>
+        <div class="row">
+            <div class="col-md-12">
+                <a href="Seni Dan Budaya.html" class="btn btn-primary back-button">
+                    <i class="fas fa-arrow-left"></i> Kembali ke Seni dan Budaya
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-15">
+                <center>
+                <img src="balla.jpg" alt="Foto 2" class="img-fluid">
+                <h4>Balla To Kajang (Rumah Kajang)</h4>
+                <p>
+                    Di kawasan adat Kajang Dalam, tepatnya di Dusun Benteng, pola perkampungan tampak berkelompok dan menghadap ke arah barat (Gunung Bawakaraeng dan Gunung Lompobattang). Kelompok-kelompok rumah tersebut berdasarkan pada sistem kekerabatan terdekat (keluarga inti atau batih). Setiap kelompok rumah dibatasi pagar hidup (benteng tinanang) atau pagar batu (benteng batu), di dalamnya terdiri atas tiga rumah batu atau lebih.
+
+                    Salah satu dari ketiga rumah tersebut (biasanya yang paling depan sebelah kanan) dijadikan rumah keluarga, rumah lainnya dijadikan tempat tinggal sementara atau mukim alternatif, ketika ada tamu bertandang ke rumah orang tua mereka
+                    
+                    Konstruksi rumah di kawasan adat Kajang ramah lingkungan karena lebih banyak menggunakan bahan-bahan alami: daun nipa dan alang-alang sebagai atap, ijuk dan rotan sebagai pengikat dan bambu sebagai lantai dan dinding. Rumah masyarakat adat Kajang umumnya tidak terlalu banyak menggunakan kayu. Untuk membangun sebuah rumah hanya diperlukan tiga balok pasak atau sulur bawah (padongko) yang melintang dari sisi kiri ke sisi kanan rumah. Untuk mengikat kesatuan tiang dalam satu jejeran (latta’) pada bagian atas rumah diletakkan balok besar yang melintang dari sisi kiri ke kanan. Rumah bagi masyarakat adat Kajang merupakan mikrokosmos dari hutan adat. Dengan demikian, pemakaian balok (padongko dan lilikang) tersebut merupakan simbolisasi dari tangkai-tangkai kayu pada sebatang pohon, yang diasosiasikan dengan tiang-tiang rumah. Untuk menjaga pergeseran tiang-tiang tersebut ditanamkan ke dalam tanah dengan kedalaman sekitar setengah depah (sihalirappa) atau paling dangkal satu siku (sisingkulu).
+                    
+                    Rumah-rumah dikawasan adat kajang umumnya memiliki aksesoris : anjungan (anjoang) berbentuk tanduk kerbau atau menggunakan ukiran kayu. Anjong tersebut merupakan simbol atau representatif dari dunia atas. Anjong-anjong tersebut umumnya berbentuk naga,yang menurut kosmologi beberapa suku dan masyarakat adat kajang, sebagai binatang raksasa penjaga langit.
+                    
+                    Bubungan rumah (timba laja) bagi masyarakat kajang tidak menyimbolkan apa-apa, kecuali struktur dewan adat kajang yaitu: Ammatowa ri kajang (satu orang), karaeng Tallua (tiga orang) dan ada’ limiyya ri Tanah loheya dan Tanah kekeya (adat lima di Tanah keke dan Tanah lohe)
+                    
+                    Balla To Kajang termasuk kedalam Domain Kemahiran dan Kerajinan Tradisional.</p>
+                </center>    
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function searchInPage(page) {
+            var searchQuery = document.getElementById("search-input").value;
+            var iframe = document.createElement("iframe");
+            iframe.style.display = "none";
+            iframe.src = page;
+    
+            iframe.onload = function () {
+                var iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
+                var pageText = iframeDocument.body.innerText;
+    
+                if (pageText.includes(searchQuery)) {
+                    document.getElementById("searchResults").innerText = "Teks ditemukan di " + page;
+                } else {
+                    document.getElementById("searchResults").innerText = "Teks tidak ditemukan di " + page;
+                }
+    
+                iframe.remove();
+            };
+    
+            document.body.appendChild(iframe);
+        }
+    </script>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+    </html>>
